@@ -14,9 +14,9 @@ export default function Navigation(){
                 options = {
                     {title: "Practice App",
                     headerStyle: {
-                        backgroundColor: "#fff"},
-                    headerTintColor: "#fff",
-                    headerTransparent: false}   
+                        backgroundColor: "transparent"},
+                    headerTintColor: "transparent",
+                    headerTransparent: true}   
                 }/>
         </Stack.Navigator>
     )

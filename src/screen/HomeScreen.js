@@ -1,12 +1,18 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import SearchBar from "../components/SearchBar"
 
 export default function HomeScreen() {
     return (
-        <View>
-            <Text></Text>
-        </View>
+        <SafeAreaView>
+            <View style = {styles.container}>
+                <SearchBar/>
+            </View>
+        </SafeAreaView>
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+    }
+})
