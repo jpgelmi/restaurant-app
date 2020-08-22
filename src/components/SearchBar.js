@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleSheet, TextInput, View } from 'react-native'
 import {Icon} from "react-native-elements"
-import { color } from 'react-native-reanimated'
 
 export default function SearchBar(props) {
     const{term, onTermChange, onTermSubmit} = props

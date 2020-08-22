@@ -10,21 +10,18 @@ export default function HomeScreen() {
     const[searchApi, results, errorMsj] = useResults()
 
     const filterResults = (price) => {
-
         return results.filter(results => {
             return results.price === price;
-
         })
-
     }
 
     return (
         <SafeAreaView>
             <View style = {styles.container}>
                 <SearchBar
-                term = {term}
-                onTermChange = {newTerm => setTerm(newTerm)}
-                onTermSubmit = {() => searchApi(term)}
+                    term = {term}
+                    onTermChange = {newTerm => setTerm(newTerm)}
+                    onTermSubmit = {() => searchApi(term)}
                 />
                 <Text>Tenemos {results.length} resultados...</Text>
                 {errorMsj ? <Text>{errorMsj}</Text> : null}
