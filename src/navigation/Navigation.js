@@ -1,6 +1,7 @@
 import React from "react"
 
 import HomeScreen from "../screen/HomeScreen"
+import DetailsScreen from "../screen/DetailsScreen"
 
 import {createStackNavigator} from "@react-navigation/stack"
 const Stack = createStackNavigator()
@@ -12,11 +13,21 @@ export default function Navigation(){
                 name = "home"
                 component = {HomeScreen}
                 options = {
-                    {title: "Practice App",
+                    {title: "Home",
                     headerStyle: {
                         backgroundColor: "transparent"},
                     headerTintColor: "transparent",
                     headerTransparent: true}   
+                }/>
+            <Stack.Screen
+                name = "details"
+                component = {DetailsScreen}
+                options = {
+                    {title: "",
+                    headerStyle: {
+                        backgroundColor: "#fff"},
+                    headerTintColor: "",
+                    headerTransparent: false}   
                 }/>
         </Stack.Navigator>
     )
