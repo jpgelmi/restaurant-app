@@ -8,7 +8,10 @@ import {
 from 'react-native'
 import ResultDetails from "../components/ResultDetails"
 
-export default function ResultList({title, results, navigation}) {
+export default function ResultList(props) {
+    
+    const {title, results, navigation} = props
+
     return (
         <View>
             <Text style = {styles.titleStyle}>{title}</Text>
@@ -18,8 +21,9 @@ export default function ResultList({title, results, navigation}) {
                     keyExtractor = {(result) => result.id}
                     showsHorizontalScrollIndicator = {false}
                     renderItem = {({item}) => {
+                        //console.log(item.id)
                         return(
-                            <TouchableOpacity onPress = {() => navigation.navigate("details") }>
+                            <TouchableOpacity onPress = {() => navigation.navigate("details", {id : item.id}) }>
                                 <ResultDetails result = {item}/>
                             </TouchableOpacity>
                         )
