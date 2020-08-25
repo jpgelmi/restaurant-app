@@ -16,6 +16,10 @@ export default function HomeScreen(props) {
         })
     }
 
+    if(!results.length){
+        return null
+    }
+
     return (
         <SafeAreaView >
             <View style = {styles.container}>
