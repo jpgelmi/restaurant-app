@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { StyleSheet, Text, View, SafeAreaView, ScrollView} from 'react-native'
 import SearchBar from "../components/SearchBar"
-import yelp from "../api/yelp"
 import useResults from "../hooks/useResults"
 import ResultList from "../components/ResultList"
 

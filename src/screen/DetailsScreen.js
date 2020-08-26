@@ -29,6 +29,7 @@ export default function DetailsScreen(props) {
 
     return (
         <View style = {styles.container}>
+            <Text>Nuestros productos</Text>
             <Text style = {styles.textStyle}> {result.name}</Text>
             <FlatList
                 data = {result.photos}
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     imageStyle:{
         height: 200,
         width: 300,
-        borderRadius: 10,
+        borderRadius: 15,
         marginVertical: 10,
         //marginBottom:10
     },
