@@ -13,9 +13,9 @@ export default function DetailsScreen(props) {
         getResult(id)
     }, [])
 
-    //console.log(route)
-    //console.log(params)
-    //console.log(id)
+    console.log(route)
+    console.log(params)
+    console.log(id)
     console.log(result)
 
     const getResult = async() =>{
